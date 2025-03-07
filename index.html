@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1Win Signals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Экран загрузки -->
+    <div id="loading-screen">
+        <img src="logo.png" alt="1Win Logo">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Основной контент -->
+    <div id="main-content" class="hidden">
+        <h1 id="pair-title">📊 Select a currency pair</h1>
+        <div id="currency-list"></div>
+
+        <h2 id="time-title"></h2>
+        <div id="expiration-list" class="hidden"></div>
+
+        <button id="start-btn" class="hidden">🚀 Find a signal</button>
+
+        <div id="signal-info" class="hidden">
+            <p id="waiting-text">⌛ The bot is looking for the best entry moment...</p>
+            <p id="soon-text" class="hidden">⚡ The signal will be generated soon, be ready❗</p>
+            <img id="signal-image" class="hidden" src="" alt="Signal">
+            <p id="signal-text" class="hidden"></p>
+        </div>
+
+        <button id="restart-btn" class="hidden">🔄 Get Signal Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
